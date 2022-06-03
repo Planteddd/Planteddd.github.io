@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.png">
+  <title>Plant3D | Self Watering Planters</title>
+  <link rel="stylesheet" href = "style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="" width = "75px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" class="abutton">Home</a></li>
+            <li><a href="Shop.html"class="abutton">Products</a></li>
+            <li><a href="MoreInfo.html"class="abutton">More Info</a></li>
+            <li><a href=""class="abutton">About Us</a></li>
+            <li><a href=""class="abutton">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="images/cart.png" alt="" width="30px" height=" 30px">
+        </a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+  </div> 
+  <!---- product detail ----->
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2">
+        <img src="images/render2_knurled.PNG" alt="">
+      </div>
+      <div class="col-2">
+        <p>Home / Knurled</p>
+        <h1>Knurled Self Watering Planter</h1>
+        <h4>$14.99</h4>
+        <!--<select name="" id="">
+          <option>Select Quantity</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        -->
+        <input type = "number" value="1"></input>
+        <a href="" class = "btn">Add to Cart</a>
+        <h3>Product Details</h3>
+        
+        <p>Self watering planters include a built-in tray to retain water and a small port for easy watering. Plants draw up the water as needed, reducing the need to water as frequently.<br> <br> Outside Color: Grey <br>Inside Color: Black</p>
+      </div>
+    </div>
+  </div>
+
+  <!----featured Products----->
+  <div class="small-container">
+    <h2 ><br><br><br>Related Products</h2>
+    <div class="row">
+      <div class="col-3">
+        <a href="HelixProductDetail.html">
+          <img src="images/render2_helix.PNG" alt="">
+          <h4>Helix</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$14.99</p>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="KnurledProductDetail.html">
+          <img src="images/render2_knurled.PNG" alt="">
+          <h4>Knurled</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$14.99</p>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="WeavedProductDetail.html">
+          <img src="images/render2_weaved.PNG" alt="">
+          <h4>Weaved</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$14.99</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-----footer------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Dowload App for Android and IOS.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo.png" alt="">
+          <p>Our Purpose Is To....</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Products</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Instagram</li>
+            <li>Youtube</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class = "copyright">Copyright 2022 - Plant3D</p>
+    </div>
+  </div>
+  
+
+  <script>
+    var MenuItems= document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px"){
+        MenuItems.style.maxHeight = "200px"
+      }
+      else{
+        MenuItems.style.maxHeight = "0px"
+      }
+    }
+  </script>
+</body>
+</html>
