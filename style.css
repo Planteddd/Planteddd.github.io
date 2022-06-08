@@ -43,6 +43,12 @@ p{
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.row2{
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .col-2{
   flex-basis: 50%;
   min-width: 300px;
@@ -96,6 +102,23 @@ p{
 .col-3 img{
   width: 100%;
 }
+.col-3-2{
+  flex-basis: 33.333%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-3-2 img{
+  width: 100%;
+}
+.col-3-3{
+  flex-basis: 33.333%;
+  padding: 0px;
+  min-width: 200px;
+  margin-bottom: 50px; 
+}
+
 .title{
   text-align: center;
   margin: 0 auto 80px;
@@ -119,6 +142,9 @@ h4{
   font-weight: normal;
 }
 .col-3 p{
+  font-size: 14px;
+}
+.col-3-2 p{
   font-size: 14px;
 }
 .rating .fa{

@@ -10,9 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="logo.png">
-  addToHomescreen();
+  
 </head>
 <body>
+  <!--------header---------->
   <div class="header">
     <div class="container">
       <div class="navbar">
@@ -25,21 +26,26 @@
             <li><a href="Shop.html"class="abutton">Products</a></li>
             <li><a href="MoreInfo.html"class="abutton">More Info</a></li>
             <li><a href=""class="abutton">About Us</a></li>
-            <li><a href=""class="abutton">Account</a></li>
+            <li><a href="Donations.html"class="abutton">Donations</a></li>
           </ul>
         </nav>
-        <a href="cart.html">
+        <a class="snipcart-checkout" href="">
           <img src="images/cart.png" alt="" width="30px" height=" 30px">
         </a>
+        <span class="snipcart-total-price"></span>
         
         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
-  
+    </div>
+  </div>
+  <!--the intro-->
+  <div class="header">
+    <div class="container">
       <div class="row">
         <div class="col-2">
-          <h1>Plant3D: <br>Self Watering <br>Planters</h1>
+          <h1 >Plant3D: <br>Self Watering <br>Planters</h1>
           <p>Self watering planters include a built-in tray <br>to retain water and a small port for easy watering. <br>Plants draw up the water as needed, <br>reducing the need to water as frequently.</p>
-          <a href="" class = "btn">More Info &#8594</a>
+          <a href="MoreInfo.html" class = "btn">More Info &#8594</a>
         </div>
         <div class="col-2">
           <img src="images/black_planter.jpg" >
@@ -47,6 +53,12 @@
       </div>
     </div>
   </div> 
+  <!--donations-->
+  <div class="container">
+    <h1><center>Plant3D is a nonprofit. </center></h1>
+    <p><center><br>Our mission is to make the world a better place one planter at a time. <br> With each planter you buy, a donation is made to charity.<br></center></p>
+    <center><a href="Donations.html" class = "btn">Plant3D Donations &#8594</a></center>
+  </div>
   <!---- featured products ----->
   <div class="small-container">
     <h2 class="title"><br>Featured Products</h2>
@@ -100,8 +112,8 @@
     <div class="container">
       <div class="row">
         <div class="footer-col-1">
-          <h3>Download Our App</h3>
-          <p> App for Android and IOS coming soon</p>
+          <h3>Don't Download Our App</h3>
+          <p> It doesn't exist</p>
           <div class="app-logo">
             <img src="images/play-store.png" alt="">
             <img src="images/app-store.png" alt="">
@@ -109,13 +121,13 @@
         </div>
         <div class="footer-col-2">
           <img src="images/logo.png" alt="">
-          <p>Our Purpose Is To....</p>
+          <p>Making the world a better place one planter at a time.</p>
         </div>
         <div class="footer-col-3">
-          <h3>Useful Links</h3>
+          <h3>More Links</h3>
           <ul>
-            <li>Coupons</li>
-            <li>Blog Products</li>
+            <li><a href = "https://www.rubiconline.com/bhargava-and-reedy-launch-plant3d/" target = _blank> Plant3d Featured in Rubicon Online</a></li>
+            <li><a href = "https://www.rubiconline.com/bhargava-and-reedy-launch-plant3d/" target = _blank> Plant3d </a></li>
             <li>Return Policy</li>
             <li>Join Affiliate</li>
           </ul>
@@ -145,6 +157,16 @@
         MenuItems.style.maxHeight = "0px"
       }
     }
+  </script>
+  <script>
+    window.SnipcartSettings = {
+      publicApiKey: "NDM2Mzc5ZTMtYWQwYi00YzlmLTk0MTQtOGQ4OGRkMzg3ZTk3NjM3OTAyOTQwMzAyMTM2ODUz",
+      loadStrategy: "on-user-interaction",
+      addProductBehavior: "none",
+      modalStyle: "side"
+    };
+  
+    (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).currency)!=null||(s.currency="usd");var l,p;(p=(l=window.SnipcartSettings).timeoutDuration)!=null||(l.timeoutDuration=2750);var w,u;(u=(w=window.SnipcartSettings).domain)!=null||(w.domain="cdn.snipcart.com");var m,g;(g=(m=window.SnipcartSettings).protocol)!=null||(m.protocol="https");var f,v;(v=(f=window.SnipcartSettings).loadCSS)!=null||(f.loadCSS=!0);var E=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,y=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(y.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),$(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),y.forEach(function(h){return document.removeEventListener(h,o)})}function $(t){!E||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
   </script>
 </body>
 </html>

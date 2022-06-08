@@ -14,30 +14,34 @@
 
     </head>
   <body>
-    <div class="header">
-        <div class="container">
-          <div class="navbar">
-            <div class="logo">
-              <img src="images/logo.png" alt="" width = "75px">
-            </div>
-            <nav>
-              <ul id="MenuItems">
-                <li><a href="index.html" class="abutton">Home</a></li>
-                <li><a href="Shop.html"class="abutton">Products</a></li>
-                <li><a href="MoreInfo.html"class="abutton">More Info</a></li>
-                <li><a href=""class="abutton">About Us</a></li>
-                <li><a href=""class="abutton">Account</a></li>
-              </ul>
-            </nav>
-            <a href="cart.html">
-                <img src="images/cart.png" alt="" width="30px" height=" 30px">
-            </a>
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+  <!--------header---------->
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="" width = "75px">
         </div>
-    
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" class="abutton">Home</a></li>
+            <li><a href="Shop.html"class="abutton">Products</a></li>
+            <li><a href="MoreInfo.html"class="abutton">More Info</a></li>
+            <li><a href=""class="abutton">About Us</a></li>
+            <li><a href="Donations.html"class="abutton">Donations</a></li>
+          </ul>
+        </nav>
+        <a class="snipcart-checkout" href="">
+          <img src="images/cart.png" alt="" width="30px" height=" 30px">
+        </a>
+        <span class="snipcart-total-price"></span>
+        
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+  </div>
 
-    
-
+    <div class="header">
+      <div class="container">
         <div class="row">
             <div class="col-2">
             <h1>Self Watering <br>Planters</h1>
@@ -102,6 +106,16 @@
             MenuItems.style.maxHeight = "0px"
           }
         }
+      </script>
+      <script>
+        window.SnipcartSettings = {
+          publicApiKey: "NDM2Mzc5ZTMtYWQwYi00YzlmLTk0MTQtOGQ4OGRkMzg3ZTk3NjM3OTAyOTQwMzAyMTM2ODUz",
+          loadStrategy: "on-user-interaction",
+          addProductBehavior: "yes",
+          modalStyle: "side"
+        };
+      
+        (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).currency)!=null||(s.currency="usd");var l,p;(p=(l=window.SnipcartSettings).timeoutDuration)!=null||(l.timeoutDuration=2750);var w,u;(u=(w=window.SnipcartSettings).domain)!=null||(w.domain="cdn.snipcart.com");var m,g;(g=(m=window.SnipcartSettings).protocol)!=null||(m.protocol="https");var f,v;(v=(f=window.SnipcartSettings).loadCSS)!=null||(f.loadCSS=!0);var E=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,y=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(y.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),$(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),y.forEach(function(h){return document.removeEventListener(h,o)})}function $(t){!E||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
       </script>
     </body>
     </html>
