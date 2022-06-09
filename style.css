@@ -241,12 +241,12 @@ ul{
   transform-origin: bottom left;
 }
 /*---media query for menu----*/
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
   nav ul{
     position: absolute;
     top: 80px;
     right: 0px;
-    background: rgba(119, 119, 119, 0.212);
+    background: rgba(9, 104, 0, 0.212);
     border-radius: 20px;
     width: 35%;
     overflow: hidden;
@@ -355,4 +355,47 @@ td:last-child{
 }
 th:last-child{
   text-align: right;
+}
+@media (prefers-color-scheme: dark) {
+  body{
+    background: #000;
+    color: #fff;
+  }
+  a{
+    color: rgb(192, 192, 192);
+  }
+  p{
+    color: rgb(192, 192, 192);
+  }
+  .header{
+    /*background: radial-gradient(#fff,#ffffff);*/
+    background-color: rgb(0, 0, 0);
+    /*background-image: url("images/trees.jpg");
+    background-color: #ffffff80;*/
+  }
+  .title2{
+    color: rgb(192, 192, 192);
+    ;
+  }
+  
+  .title{
+    color: rgb(192, 192, 192);
+  }
+  h4{
+    color: rgb(192, 192, 192);
+  }
+  @media only screen and (max-width: 1000px){
+    nav ul{
+      background: rgba(9, 104, 0, 0.212);
+    }
+    nav ul li a{
+      color: rgb(255, 255, 255);
+    }
+  }
+  th{
+    color: rgb(0, 0, 0);
+  }
+  .abutton:after {
+    background-color: #ffffff;
+  }
 }
